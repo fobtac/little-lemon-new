@@ -1,12 +1,13 @@
-import Header from './src/components/Header.js'
-import Nav from './src/components/Nav.js'
-import Main from './src/components/Main.js'
-import Footer from './src/components/Footer.js'
-import './App.css';
+import React from 'react'
+import {Header} from './components/Header'
+import {Nav} from './components/Nav'
+import {Main} from './components/Main'
+import {Footer} from './components/Footer'
+import './App.css'
 
-function App() {
+function newApp() {
   return (
-    <div className="App">
+    <div className="newApp">
       <Header />
       <Nav />
       <Main />
@@ -15,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default newApp;
