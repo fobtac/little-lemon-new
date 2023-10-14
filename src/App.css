@@ -36,3 +36,152 @@
     transform: rotate(360deg);
   }
 }
+
+.newApp {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(4, 1fr [col-start]);
+  grid-template-rows: .2fr 1fr 1.5fr 1fr 1fr 1fr;
+  grid-gap: 0.2rem;
+}
+
+nav {
+  display: inline;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  justify-self: center;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 1em;
+  gap: 15px;
+}
+
+nav > ul > img {
+  height: 30px;
+}
+
+header {
+  display: grid;
+  background-color: gray;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color: #495E57;
+}
+
+
+.item-4 {
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  height: 250px;
+  width: auto;
+}
+
+
+header > div {
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: center;
+}
+
+header > div > h1 {
+  display: grid;
+  color: yellow;
+}
+
+.p1 {
+  color: white;
+  font-weight: 1000;
+}
+
+.p2 {
+  color: white;
+}
+
+button {
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: center;
+  align-self: end;
+  font-size: medium;
+  background-color: yellow;
+}
+
+.Main {
+  background-color: white;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: span4;
+}
+
+Footer {
+  display: grid;
+  background-color: #D9D9D9;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.Footer > ul {
+  display: grid;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: span4;
+}
+
+.item-5 {
+  width: 100px;
+}
+
+.Doormat {
+  display: grid;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  justify-content: start;
+  align-self: center;
+}
+
+.Contact {
+  display: grid;
+  justify-content: center;
+  align-self: center;
+}
+
+.Socials {
+  display: grid;
+  justify-content: end;
+}
+
+
+
+@media only screen and (max-width:550px){
+  .newApp {
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr .5fr 1fr .5fr .5fr .5fr;
+    grid-template-areas: 
+      "nav"
+      "header"
+      "main"
+      "footer";
+  }
+}

@@ -1,10 +1,12 @@
 import React from "react";
+import Logo from 'M:/front_end_development/code/little-lemon/little-lemon-app/src/assets/images/Logo.svg';
 
 function Footer() {
     return (
+        <footer class="container">
         <div className="Footer">
-            <h1>this is a footer</h1>
-            <ul>doormat nav
+        <img class="item item-5" src={Logo} alt="Little Lemon Logo"></img>
+            <ul className="Doormat">doormat navigation
                 <li>
                     <a href="index.html">home</a>
                 </li>
@@ -24,7 +26,7 @@ function Footer() {
                     <a href="login.html">login</a>
                 </li>
             </ul>
-            <ul>contact
+            <ul className="Contact">contact
                 <li>
                     <a href="address.html">address</a>
                 </li>
@@ -35,7 +37,7 @@ function Footer() {
                     <a href="email.html">email</a>
                 </li>
             </ul>
-            <ul>socials
+            <ul className="Socials">socials
                 <li>
                     <a href="http://www.youtube.com">youtube</a>
                 </li>
@@ -50,6 +52,7 @@ function Footer() {
                 </li>
             </ul>
         </div>
+        </footer>
     );
 };
 

@@ -1,15 +1,16 @@
 import React from "react";
+import Logo from 'M:/front_end_development/code/little-lemon/little-lemon-app/src/assets/images/Logo.svg'
 
-function Nav() {
+const Nav = () => {
     return (
-        <div className="Nav">
-            <h1>nav here</h1>
+        <nav class="container">
             <ul>
+            <img class="item item-2" src={Logo} alt="Little Lemon Logo"></img>
                 <li>
                     <a href="index.html">home</a>
                 </li>
                 <li>
-                    <a href="about.html">about</a>
+                     <a href="about.html">about</a>
                 </li>
                 <li>
                     <a href="menu.html">menu</a>
@@ -24,7 +25,7 @@ function Nav() {
                     <a href="login.html">login</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     );
 };
 
