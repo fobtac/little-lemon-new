@@ -1,5 +1,6 @@
 import React from "react";
 import Chef from "M:/front_end_development/code/little-lemon/little-lemon-app/src/assets/images/restaurant chef B.jpg"
+import './styles/Header.css'
 
 const Header = () => {
     return (
@@ -8,9 +9,10 @@ const Header = () => {
             <div class="item item-3">
                 <h1>Little Lemon</h1>
                     <p class="p1">Chicago</p>
-                    <p class="p2">Located in the Heart of Little Chicago, Little Lemon is tasty. Scooby Doo even likes it. It's so good, for real</p>
+                    <p class="p2">Located in the Heart of Little Chicago, Little Lemon is tasty. Scooby Doo likes it.
+                    There's even a TV hanging in the corner of the ceiling. One time I went and they were playing the Sopranos, it was pretty cool</p>
             </div>
-            <button type="button">Book a table</button>
+            <button aria-label="On Click" type="button">Book a table</button>
         </header>
     );
 };
